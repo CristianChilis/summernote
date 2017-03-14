@@ -3149,25 +3149,25 @@
                 }).appendTo(document.body).attr('src', url);
 
                 if (($("#alternative-text").val() != '') && ($("#description").val() === '') && ($("#title").val() === '')) {
-                    $("img").attr({
+                    $img.attr({
                         alt: $("#alternative-text").val()
                     });
                 } else {
                     if ($("#description").val() != '' && $("#alternative-text").val() != '') {
-                        $("img").attr({
+                        $img.attr({
                             alt: $("#alternative-text").val(),
                             longdesc: $("#description").val()
                         });
                     } else {
                         if ($("#alternative-text").val() != '' && $("#title").val() != '') {
-                            $("img").attr({
+                            $img.attr({
                                 alt: $("#alternative-text").val(),
                                 title: $("#title").val()
                             });
                         }
 
                         else {
-                            $("img").attr({
+                            $img.attr({
                                 alt: $("#alternative-text").val(),
                                 longdesc: $("#description").val(),
                                 title: $("#title").val()
